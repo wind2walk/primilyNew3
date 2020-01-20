@@ -1,0 +1,12 @@
+.slick-slide img{
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track
+{
+  display: flex !important;
+}
+.slick-slide
+{
+  height: inherit !important;
+}
