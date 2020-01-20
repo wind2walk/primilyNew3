@@ -19,6 +19,7 @@ const Text = styled.div`
   font-size: large;
   font-weight: bold;
   text-align: center;
+  width: 70%;
 `;
 
 const settings = {
@@ -26,7 +27,7 @@ const settings = {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     speed:500,
     autoplaySpeed: 10000
 };
