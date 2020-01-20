@@ -2,7 +2,7 @@
 templateKey: home-page
 home:
   sliderImages:
-    - imageSrc: /img/receptiones-bw.png
+    - imageSrc: /img/receptiones-h386-1.png
       imageText: >-
         Primily Automated Call Assistant. Providing you 24X7 call answering with
         a Call Menu. Your caller can not get information when you are not
