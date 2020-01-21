@@ -2,6 +2,12 @@
 templateKey: home-page
 home:
   sliderImages:
+    - imageSrc: /img/receptiones-h386-1.png
+      imageText: >-
+        Primily Automated Call Assistant. Providing you 24X7 call answering with
+        a Call Menu. Your caller can not get information when you are not
+        available to answer.  
+      imagealt: assistant
     - imageSrc: /img/one-line-H386.png
       imageText: >-
         Take back control of your phone with the Primily 2nd number and

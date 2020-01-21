@@ -19,7 +19,6 @@ const Text = styled.div`
   font-size: large;
   font-weight: bold;
   text-align: center;
-  width: 70%;
 `;
 
 const settings = {
