@@ -20,10 +20,11 @@ description:
         head: Be Mobile as You Like
         icon: phonelink_ring
   description: >-
-    Mobile Centeric...Your mobile phone does everything. Call Menu changes, call
-    reporting, notifications, subscription & billing.. A separate computer is
-    not required.
-  mainImage: /img/screen-home.png
+    The Primily Call Assistant is Mobile Centeric...Your mobile phone is all you
+    need. Call Menu changes, text messages, voicemail, call reporting,
+    notifications, subscription and billing. A separate computer is not required
+    or web site is not required.
+  mainImage: /img/screen-callmenu-h386.png
   playstoreImage: /img/stores.png
 ---
 
