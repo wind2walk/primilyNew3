@@ -2,7 +2,7 @@
 templateKey: home-page
 home:
   sliderImages:
-    - imageSrc: /img/receptiones-h386-1.png
+    - imageSrc: /img/call-assistant2-h386.png
       imageText: >-
         Primily Automated Call Assistant. Providing you with a Call Menu and 2nd
         phone number. Your callers can get information 24X7 when you are not
