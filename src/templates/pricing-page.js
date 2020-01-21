@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types'
+import '../styles/pricing-page.scss';
 
 //import {Link, graphql, StaticQuery} from 'gatsby'
 import {graphql, StaticQuery} from 'gatsby'
@@ -79,9 +80,8 @@ export class Pricing extends React.Component {
                                 <div className="info_head_text">
                                     <h2>${pricing.priceBox2.price}</h2>
                                 </div>
-                                <a href="" className="waves-effect waves-light btn">sign up</a> <a href=""
-                                                                                                   className="price-padding">Cancel
-                                online at anytime</a>
+                                <a href="" className="waves-effect waves-light btn">sign up</a>
+                                <a href="" className="price-padding">Cancel online at anytime</a>
                             </div>
                         </div>
                         <br></br>
