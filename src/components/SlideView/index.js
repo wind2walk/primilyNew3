@@ -39,6 +39,7 @@ export const SlideView = ({content, className}) => (
             {content.map((image, index) => (
                 <Page key={index}>
                     <img src={image.imageSrc}  alt={image.imagealt}/>
+                    <br/>
                     <Text>{image.imageText}</Text>
                 </Page>
             ))}
