@@ -23,7 +23,9 @@ export class Description extends React.Component {
                     </div>
                     <div className="row">
                         <div className="col s4 center-align">
-                            <img src={description.mainImage} className="responsive-img" alt=""/>
+                            <div className="card">
+                                <img src={description.mainImage} className="responsive-img" alt=""/>
+                            </div>
                             <div className="row">
                                 <div className="col s12"></div>
                             </div>

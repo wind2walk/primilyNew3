@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../../styles/slideview.css";
 
 const Wrapper = styled.div`
-    width: 70%;
+    width: 100%;
 `;
 
 const Page = styled.div`
@@ -34,7 +36,7 @@ const settings = {
 //export default class SlideView {content, className} extends React.Component {
 export const SlideView = ({content, className}) => (
 
-    <Wrapper className="grey lighten-4">
+    <Wrapper className="slick-carousel">
         <Slider {...settings}>
             {content.map((image, index) => (
                 <Page key={index}>

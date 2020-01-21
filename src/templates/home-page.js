@@ -15,23 +15,7 @@ export class Home extends React.Component {
         return (
 
             <div className="container">
-
                 <SlideView content={home.sliderImages} />
-
-                {/*<CarouselComponent content={home.sliderImages}/>
-                <div className="carousel carousel-slider center">
-                    {home.sliderImages.map((image, index) => (
-                        <div className="carousel-item blue white-text" href="#one!" key={index}>
-                            <img src={image.imagesrc} className="responsive-img" alt={image.imagealt}/>
-                        </div>
-                    ))}
-                </div>
-                <div className="row">
-                    <div className="col s12"><br></br></div>
-                </div>
-                <div className="row">
-                    <div className="col s12"><br></br></div>
-                </div>*/}
             </div>
         )
     }
