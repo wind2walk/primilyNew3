@@ -24,7 +24,7 @@ description:
     need. Call Menu changes, text messages, voicemail, call reporting,
     notifications, subscription and billing. A separate computer is not required
     or web site is not required.
-  mainImage: /img/screen-callmenu-h386.png
+  mainImage: /img/screen-callmenu.png
   playstoreImage: /img/stores.png
 ---
 
