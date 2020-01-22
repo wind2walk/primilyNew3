@@ -9,11 +9,8 @@ import SlideView from "../components/SlideView";
 
 export class Home extends React.Component {
     render() {
-
         const {home} = this.props.data
-
         return (
-
             <div className="container">
                 <SlideView content={home.sliderImages} />
             </div>

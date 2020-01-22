@@ -9,11 +9,11 @@ import SlideView from "../components/SlideView";
 
 export class Screens extends React.Component {
     render() {
-        const {screens} = this.props.data
+        const {screens: screens} = this.props.data
         console.log(this.props)
         return (
             <div className="container">
-                {/*<SlideView content={screens.sliderImages} />*/}
+                <SlideView content={screens.sliderImages} />
             </div>
         )
     }

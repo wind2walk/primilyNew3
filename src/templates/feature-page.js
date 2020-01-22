@@ -4,11 +4,20 @@ import PropTypes from 'prop-types'
 //import { Link, graphql, StaticQuery } from 'gatsby'
 import { graphql, StaticQuery } from 'gatsby'
 import '../styles/feature-page.scss';
+import styled from 'styled-components';
 
 export class Feature extends React.Component {
     render() {
 
       const { feature } = this.props.data
+      const HoverDiv = styled.div`
+	
+	    :hover {
+		    box-shadow: -4px -4px 40px 0 rgba(0,0,0,0.1) inset;
+            transition: 0.3s;
+           border-radius: 5px;
+	    }
+        `
 
       return (
     <div className="feature">
@@ -19,7 +28,7 @@ export class Feature extends React.Component {
         {/* <div className="col s12"> */}
         <div className="row">
           {feature.featureBody.map((feature, index) => (
-            <div className="col s12 m6 l3" key={index}>
+            <HoverDiv className="col s12 m6 l3" key={index}>
               <div className="center-align feature-items feature-card">
                 <div className="row">
                   <div className="col s4"></div>
@@ -30,7 +39,7 @@ export class Feature extends React.Component {
                 <h5 className="">{feature.head}</h5>
                 <p>{feature.description}</p>
               </div>
-            </div>
+            </HoverDiv>
           ))}
         </div>
         {/* </div> */}

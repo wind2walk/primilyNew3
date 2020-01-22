@@ -4,12 +4,14 @@ import PropTypes from 'prop-types'
 //import { Link, graphql, StaticQuery } from 'gatsby'
 import {graphql, StaticQuery} from 'gatsby'
 //import '../styles/describe-page.scss';
-import '../styles/description-page.scss';
+import '../styles/imagedescription-page.scss';
+//import {Description} from "./description-page";
 
-export class Description extends React.Component {
+export class ImageDescription extends React.Component {
     render() {
 
-        const {description: description} = this.props.data
+        const {imagedescription: imagedescription} = this.props.data
+        console.log('imagedescription')
         console.log(this.props.data)
         return (
             <div className="description">
@@ -24,22 +26,22 @@ export class Description extends React.Component {
                     <div className="row">
                         <div className="col s4 center-align">
                             <div className="card">
-                                <img src={description.mainImage} className="responsive-img" alt=""/>
+                                <img src={imagedescription.mainImage} className="responsive-img" alt=""/>
                             </div>
                             <div className="row">
                                 <div className="col s12"></div>
                             </div>
-                            <img src={description.playstoreImage} className="responsive-img" height="67"
+                            <img src={imagedescription.playstoreImage} className="responsive-img" height="67"
                                  width="232" alt=""/>
                         </div>
                         <div className="col s2"></div>
                         <div className="col s6">
                             <div className="feature-items">
-                                <h4 className="description-font">{description.cardHead}</h4>
-                                <p>{description.description}</p>
+                                <h4 className="description-font">{imagedescription.cardHead}</h4>
+                                <p>{imagedescription.description}</p>
                                 <div className="row"></div>
                                 <div className="row"></div>
-                                {description.cards.descriptionlist.map((card, index) => (
+                                {imagedescription.cards.descriptionlist.map((card, index) => (
                                     <div className="row" key={index}>
                                         <div className="col s1 description-icon">
                                             <i className="Large material-icons">{card.icon}</i>
@@ -68,21 +70,21 @@ export class Description extends React.Component {
     }
 }
 
-Description.propTypes = {
+ImageDescription.propTypes = {
     data: PropTypes.object
 }
 
 export default () => (
     <StaticQuery
         query={graphql`
-          query descriptionQuery {
+          query imagedescriptionQuery {
             allMarkdownRemark(
-              filter: { frontmatter: { templateKey: { eq: "description-page" } } }
+              filter: { frontmatter: { templateKey: { eq: "imagedescription-page" } } }
             ) {
               edges {
                 node {
                   frontmatter {
-                    description {
+                    imagedescription {
                       mainImage
                       playstoreImage
                       cardHead
@@ -101,7 +103,7 @@ export default () => (
             }
           }
         `}
-        render={(data, count) => <Description data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count}/>}
+        render={(data, count) => <ImageDescription data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count}/>}
     />
 )
 

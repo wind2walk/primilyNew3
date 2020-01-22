@@ -14,6 +14,7 @@ import Demo from '../templates/demo-page';
 import Home from '../templates/home-page';
 import Layout from "../components/Layout";
 import {Screens} from "../templates/screens-page";
+import {ImageDescription} from "../templates/imagedescription-page";
 
 export const HomePageTemplate = ({ home }) => {
   return (
@@ -37,7 +38,20 @@ export const HomePageTemplate = ({ home }) => {
             <Description />
           </div>
 
-          <div id="pricing" className="section scrollspy">
+          <div id="appgallery" className="section scrollspy">
+            <Appgallery />
+          </div>
+
+          {/*
+          <div id="imagedescription" className="section scrollspy">
+            <ImageDescription />
+          </div>
+          <div id="screens" className="section scrollspy">
+            <Screens />
+          </div>
+          */}
+
+         [<div id="pricing" className="section scrollspy">
             <Pricing />
           </div>
           <div id="demo" className="section scrollspy">

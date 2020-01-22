@@ -15,6 +15,7 @@ import DemoPagePreview from "./preview-templates/PricingPagePreview";
 import VideoPagePreview from "./preview-templates/VideoPagePreview";
 import DescriptionPagePreview from "./preview-templates/DescriptionPagePreview";
 import AppgalleryPagePreview from "./preview-templates/AppgalleryPagePreview";
+import ImageDescriptionPagePreview from "./preview-templates/ImageDescriptionPagePreview";
 
 CMS.registerPreviewTemplate("home", HomePagePreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);
@@ -30,4 +31,4 @@ CMS.registerPreviewTemplate("pricing", PricingPagePreview);
 CMS.registerPreviewTemplate("demo", DemoPagePreview);
 CMS.registerPreviewTemplate("video", VideoPagePreview);
 CMS.registerPreviewTemplate("description", DescriptionPagePreview);
-CMS.registerPreviewTemplate("appgallery", AppgalleryPagePreview);
+CMS.registerPreviewTemplate("imagedescription", ImageDescriptionPagePreview);

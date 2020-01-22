@@ -110,37 +110,70 @@ collections:
                 ]
             }
       - file: "src/pages/description/index.md"
-        label: "Description"
-        name: "description"
-        fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "description-page" }
-          - {
+          label: "Description"
+          name: "description"
+          fields:
+            - { label: "Template Key", name: "templateKey", widget: "hidden", default: "description-page" }
+            - {
               label: "Description",
               name: "description",
               widget: "object",
               fields:
                 [
-                  { label: "Main Image", name: "mainImage", widget: "image" },
-                  { label: "Play Store Image", name: "playstoreImage", widget: "image" },
-                  { label: "Card Head", name: "cardHead", widget: "string" },
-                  { label: "Description", name: "description", widget: "string" },
-                  {
-                    label: "Cards",
-                    name: "cards",
-                    widget: "object",
-                    field:
-                      {
-                        label: "Description List",
-                        name: "descriptionlist",
-                        widget: "list",
-                        fields:
-                          [
-                            { label: "Description", required: true, name: "description", widget: "text" },
-                            { label: "Head", required: false, name: "head", widget: "string" },
-                            { label: "Icon", required false, name: "icon", widget: "string" }
-                          ]
-                      }
-                  }
+                { label: "Main Image", name: "mainImage", widget: "image" },
+                { label: "Play Store Image", name: "playstoreImage", widget: "image" },
+                { label: "Card Head", name: "cardHead", widget: "string" },
+                { label: "Description", name: "description", widget: "string" },
+                {
+                  label: "Cards",
+                  name: "cards",
+                  widget: "object",
+                  field:
+                    {
+                      label: "Description List",
+                      name: "descriptionlist",
+                      widget: "list",
+                      fields:
+                        [
+                        { label: "Description", required: true, name: "description", widget: "text" },
+                        { label: "Head", required: false, name: "head", widget: "string" },
+                        { label: "Icon", required false, name: "icon", widget: "string" }
+                        ]
+                    }
+                }
+                ]
+      - file: "src/pages/imagedescription/index.md"
+          label: "Description"
+          name: "imagedescription"
+          fields:
+            - { label: "Template Key", name: "templateKey", widget: "hidden", default: "imagedescription-page" }
+            - {
+              label: "Description",
+              name: "mainDescription",
+              widget: "object",
+              fields:
+                [
+                { label: "Main Image", name: "mainImage", widget: "image" },
+                { label: "Play Store Image", name: "playstoreImage", widget: "image" },
+                { label: "Card Head", name: "cardHead", widget: "string" },
+                { label: "Description", name: "description", widget: "string" },
+                {
+                  label: "Cards",
+                  name: "cards",
+                  widget: "object",
+                  field:
+                    {
+                      label: "Description List",
+                      name: "discriptionList",
+                      widget: "list",
+                      fields:
+                        [
+                        { label: "Description", required: true, name: "description", widget: "text" },
+                        { label: "Head", required: false, name: "head", widget: "string" },
+                        { label: "Icon", required false, name: "icon", widget: "string" }
+                        ]
+                    }
+                }
                 ]
             }
       - file: "src/pages/appgallery/index.md"

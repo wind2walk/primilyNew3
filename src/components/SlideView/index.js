@@ -33,10 +33,9 @@ const settings = {
     autoplaySpeed: 10000
 };
 
-//export default class SlideView {content, className} extends React.Component {
 export const SlideView = ({content, className}) => (
 
-    <Wrapper className="slick-carousel">
+    <Wrapper className="slick-carousel grey lighten-4">
         <Slider {...settings}>
             {content.map((image, index) => (
                 <Page key={index}>
