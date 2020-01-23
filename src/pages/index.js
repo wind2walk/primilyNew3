@@ -6,13 +6,13 @@ import Helmet from "react-helmet";
 import Feature from '../templates/feature-page';
 import Describe from '../templates/describe-page';
 import Video from '../templates/video-page';
-import Appgallery from '../templates/appgallery-page';
+//import Appgallery from '../templates/appgallery-page';
 import Pricing from '../templates/pricing-page';
 import Demo from '../templates/demo-page';
 //import BlogRoll from '../templates/blog-page';
 import Home from '../templates/home-page';
 import Layout from "../components/Layout";
-//import {Screens} from "../templates/screens-page";
+
 import Description from '../templates/description-page';
 import ImageDescription from "../templates/imagedescription-page";
 
@@ -47,9 +47,6 @@ export const HomePageTemplate = ({home}) => {
 
                     <div id="appgallery" className="section scrollspy">
                         <Appgallery />
-                    </div>
-                    <div id="screens" className="section scrollspy">
-                        <Screens />
                     </div>
                     */}
 
