@@ -149,7 +149,7 @@ collections:
             - { label: "Template Key", name: "templateKey", widget: "hidden", default: "imagedescription-page" }
             - {
               label: "Description",
-              name: "mainDescription",
+              name: "description",
               widget: "object",
               fields:
                 [
