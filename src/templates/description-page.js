@@ -7,10 +7,25 @@ import {graphql, StaticQuery} from 'gatsby'
 import '../styles/description-page.scss';
 
 export class Description extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {image: ''};
+        const {description: description} = this.props.data
+        this.state.image = description.mainImage
+        this.handleClick = this.handleClick.bind(this);
+      }
+
+    handleClick(card) {
+        this.setState(state => ({
+            image: card.image
+        }));
+      }
+
     render() {
 
         const {description: description} = this.props.data
-        console.log(this.props.data)
+        // const { image } = this.state;
         return (
             <div className="description">
 
@@ -24,7 +39,7 @@ export class Description extends React.Component {
                     <div className="row">
                         <div className="col s4 center-align">
                             <div className="card">
-                                <img src={description.mainImage} className="responsive-img" alt=""/>
+                                <img src={this.state.image} className="responsive-img" alt=""/>
                             </div>
                             <div className="row">
                                 <div className="col s12"></div>
@@ -40,7 +55,7 @@ export class Description extends React.Component {
                                 <div className="row"></div>
                                 <div className="row"></div>
                                 {description.cards.descriptionlist.map((card, index) => (
-                                    <div className="row" key={index}>
+                                    <div className="row" key={index} onClick={() => this.handleClick(card)}>
                                         <div className="col s1 description-icon">
                                             <i className="Large material-icons">{card.icon}</i>
                                         </div>
@@ -92,6 +107,7 @@ export default () => (
                           icon
                           head
                           description
+                          image
                         }
                       }
                     }

@@ -9,7 +9,6 @@ import '../styles/imagedescription-page.scss';
 export class ImageDescription extends React.Component {
     render() {
 
-        console.log(this.props.data)
         const {imagedescription: imagedescription} = this.props.data
 
         return (
