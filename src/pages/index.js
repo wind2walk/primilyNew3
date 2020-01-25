@@ -6,15 +6,15 @@ import Helmet from "react-helmet";
 import Feature from '../templates/feature-page';
 import Describe from '../templates/describe-page';
 import Video from '../templates/video-page';
-//import Appgallery from '../templates/appgallery-page';
+
 import Pricing from '../templates/pricing-page';
 import Demo from '../templates/demo-page';
-//import BlogRoll from '../templates/blog-page';
 import Home from '../templates/home-page';
 import Layout from "../components/Layout";
-
 import Description from '../templates/description-page';
-import ImageDescription from "../templates/imagedescription-page";
+//import BlogRoll from '../templates/blog-page';
+//import ImageDescription from "../templates/imagedescription-page";
+//import Appgallery from '../templates/appgallery-page';
 
 export const HomePageTemplate = ({home}) => {
     return (
@@ -39,12 +39,11 @@ export const HomePageTemplate = ({home}) => {
                         <Description/>
                     </div>
 
-                    <div id="imagedescription" className="section scrollspy">
+                    {/* Add new screen Component here */}
+
+                    {/*  <div id="imagedescription" className="section scrollspy">
                         <ImageDescription/>
                     </div>
-
-                    {/*}
-
                     <div id="appgallery" className="section scrollspy">
                         <Appgallery />
                     </div>
