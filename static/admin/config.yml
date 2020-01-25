@@ -143,8 +143,8 @@ collections:
               }
               ]
       - file: "src/pages/imagedescription/index.md"
-          label: "Description"
-          name: "imagedescription"
+          label: "Description",
+          name: "imagedescription",
           fields:
             - { label: "Template Key", name: "templateKey", widget: "hidden", default: "imagedescription-page" }
             - {
