@@ -42,7 +42,7 @@ export class ImageDescription extends React.Component {
                                             <img src={card.image} className="responsive-img" alt=""/>
                                         </div>
                                         <div className="col s1 description-icon">
-                                          {/*  <i className="Large material-icons">{card.icon}</i>*/}
+                                          <i className="Large material-icons">{card.icon}</i>
                                         </div>
                                         <div className="col s9">
                                             <div className="feature-items">
