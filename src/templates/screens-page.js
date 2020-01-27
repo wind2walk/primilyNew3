@@ -5,13 +5,33 @@ import PropTypes from 'prop-types'
 import {graphql, StaticQuery} from 'gatsby'
 //import '../styles/describe-page.scss';
 import '../styles/description-page.scss';
+import Box from '@material-ui/core/Box';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
-export class Description extends React.Component {
+export class Screens extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {image: ''};
+        const {screens: screens} = this.props.data
+        this.state.image = screens.cards.screenslist[0].image
+        this.handleClick = this.handleClick.bind(this);
+      }
+
+    handleClick(card) {
+        this.setState(state => ({
+            image: card.image
+        }));
+      }
+
     render() {
 
-        const {description: description} = this.props.data
-        console.log(this.props.data)
+        const {screens: screens} = this.props.data
+        // const { image } = this.state;
         return (
+
             <div className="description">
 
                 <div className="container">
@@ -19,28 +39,29 @@ export class Description extends React.Component {
                         <div className="col s12"><br/></div>
                     </div>
                     <div className="row">
-                        <div className="col s12"><br/></div>
+                        <div className="col s12">
+                        <div className="feature-items center-align">
+                            <h4 className="description-font">{screens.cardHead}</h4>
+                            <p>{screens.description}</p>
+                        </div>
+                        </div>
                     </div>
                     <div className="row">
                         <div className="col s4 center-align">
                             <div className="card">
-                                <img src={description.mainImage} className="responsive-img" alt=""/>
+                                <img src={this.state.image} className="responsive-img" alt=""/>
                             </div>
                             <div className="row">
                                 <div className="col s12"></div>
                             </div>
-                            <img src={description.playstoreImage} className="responsive-img" height="67"
+                            <img src={screens.playstoreImage} className="responsive-img" height="67"
                                  width="232" alt=""/>
                         </div>
                         <div className="col s2"></div>
                         <div className="col s6">
                             <div className="feature-items">
-                                <h4 className="description-font">{description.cardHead}</h4>
-                                <p>{description.description}</p>
-                                <div className="row"></div>
-                                <div className="row"></div>
-                                {description.cards.descriptionlist.map((card, index) => (
-                                    <div className="row" key={index}>
+                                {screens.cards.screenslist.map((card, index) => (
+                                    <div className="row" key={index} onClick={() => this.handleClick(card)}>
                                         <div className="col s1 description-icon">
                                             <i className="Large material-icons">{card.icon}</i>
                                         </div>
@@ -56,6 +77,14 @@ export class Description extends React.Component {
                         </div>
                     </div>
                     <div className="row">
+                        <div className="col s12">
+                        <div className="feature-items center-align">
+                            <h4 className="description-font">{screens.cardFooter}</h4>
+                            <p>{screens.CardFooterdescription}</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div className="row">
                         <div className="col s12"><br></br></div>
                     </div>
                     <div className="row">
@@ -68,32 +97,35 @@ export class Description extends React.Component {
     }
 }
 
-Description.propTypes = {
+Screens.propTypes = {
     data: PropTypes.object
 }
 
 export default () => (
     <StaticQuery
         query={graphql`
-          query descriptionQuery {
+          query screensQuery {
             allMarkdownRemark(
-              filter: { frontmatter: { templateKey: { eq: "description-page" } } }
+              filter: { frontmatter: { templateKey: { eq: "screens-page" } } }
             ) {
               edges {
                 node {
                   frontmatter {
-                    description {
+                    screens {
                       mainImage
                       playstoreImage
                       cardHead
                       description
                       cards {
-                        descriptionlist {
+                        screenslist {
                           icon
                           head
                           description
+                          image
                         }
                       }
+                      cardFooter
+                      CardFooterdescription
                     }
                   }
                 }
@@ -101,9 +133,6 @@ export default () => (
             }
           }
         `}
-        render={(data, count) => <Description data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count}/>}
+        render={(data, count) => <Screens data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count}/>}
     />
 )
-
-
-

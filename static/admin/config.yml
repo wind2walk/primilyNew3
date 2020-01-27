@@ -120,27 +120,62 @@ collections:
             widget: "object",
             fields:
               [
-              { label: "Main Image", name: "mainImage", widget: "image" },
-              { label: "Play Store Image", name: "playstoreImage", widget: "image" },
-              { label: "Card Head", name: "cardHead", widget: "string" },
-              { label: "Description", name: "description", widget: "string" },
-              {
-                label: "Cards",
-                name: "cards",
-                widget: "object",
-                field:
-                  {
-                    label: "Description List",
-                    name: "descriptionlist",
-                    widget: "list",
-                    fields:
-                      [
-                      { label: "Description", required: true, name: "description", widget: "text" },
-                      { label: "Head", required: false, name: "head", widget: "string" },
-                      { label: "Icon", required false, name: "icon", widget: "string" }
-                      ]
-                  }
-              }
+                { label: "Main Image", name: "mainImage", widget: "image" },
+                { label: "Play Store Image", name: "playstoreImage", widget: "image" },
+                { label: "Card Head", name: "cardHead", widget: "string" },
+                { label: "Description", name: "description", widget: "string" },
+                {
+                  label: "Cards",
+                  name: "cards",
+                  widget: "object",
+                  field:
+                    {
+                      label: "Description List",
+                      name: "descriptionlist",
+                      widget: "list",
+                      fields:
+                        [
+                          { label: "Description", required: true, name: "description", widget: "text" },
+                          { label: "Head", required: false, name: "head", widget: "string" },
+                          { label: "Icon", required: false, name: "icon", widget: "string" }
+                        ]
+                    }
+                }
+              ]
+          }
+      - file: "src/pages/screens/index.md"
+        label: "Screens"
+        name: "screens"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "screens-page" }
+          - {
+            label: "Screens",
+            name: "screens",
+            widget: "object",
+            fields:
+              [
+                { label: "Main Image", name: "mainImage", widget: "image" },
+                { label: "Play Store Image", name: "playstoreImage", widget: "image" },
+                { label: "Card Head", name: "cardHead", widget: "string" },
+                { label: "Description", name: "description", widget: "string" },
+                {
+                  label: "Cards",
+                  name: "cards",
+                  widget: "object",
+                  field:
+                    {
+                      label: "Description List",
+                      name: "descriptionlist",
+                      widget: "list",
+                      fields:
+                        [
+                          { label: "Description", required: true, name: "description", widget: "text" },
+                          { label: "Head", required: false, name: "head", widget: "string" },
+                          { label: "Icon", required: false, name: "icon", widget: "string" },
+                          { label: "Image", required: false, name: "image", widget: "image" }
+                        ]
+                    }
+                }
               ]
           }
       - file: "src/pages/imagedescription/index.md"
