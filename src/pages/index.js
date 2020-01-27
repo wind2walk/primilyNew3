@@ -12,6 +12,7 @@ import Demo from '../templates/demo-page';
 import Home from '../templates/home-page';
 import Layout from "../components/Layout";
 import Description from '../templates/description-page';
+import Screens from '../templates/screens-page';
 //import BlogRoll from '../templates/blog-page';
 //import ImageDescription from "../templates/imagedescription-page";
 //import Appgallery from '../templates/appgallery-page';
@@ -37,6 +38,9 @@ export const HomePageTemplate = ({home}) => {
 
                     <div id="description" className="section scrollspy">
                         <Description/>
+                    </div>
+                    <div id="screens" className="section scrollspy">
+                        <Screens/>
                     </div>
 
                     {/* Add new screen Component here */}
