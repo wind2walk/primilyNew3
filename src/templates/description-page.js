@@ -22,8 +22,8 @@ export class Description extends React.Component {
                         <div className="col s12"><br/></div>
                     </div>
                     <div className="row">
-                    <div className="col s6"></div>
-                        <div className="col s6 feature-items">
+                    <div className="col s0 m6"></div>
+                        <div className="col s12 m6 feature-items">
                             <h4 className="description-font">{description.cardHead}</h4>
                             <p>{description.description}</p>
                         </div>

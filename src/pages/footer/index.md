@@ -18,7 +18,7 @@ menuItems:
   - label: Demo
     linkType: demo
     linkURL: /#demo
-  - label: Contact Us
+  - label: Contactus
     linkType: contactus
     linkURL: /contact
   - label: Details
@@ -27,7 +27,7 @@ menuItems:
   - label: Policy
     linkType: policy
     linkURL: /policy
-  - label: About Us
+  - label: Aboutus
     linkType: aboutus
     linkURL: /about
 socialLinks:

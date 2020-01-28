@@ -75,21 +75,24 @@ export class Screens extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                </div>
+                <div className="container-fluid">
+                <div className="row">
+                    <div className="col s12 center-align">
                         {screens.playstoreImages.map((image, index) => (
-                            <div className="col s3" key={index}>
-                                <a className="row" href={image.url}>
-                                    <img src={image.image} alt={image.alt} className="responsive-img" height="67"
-                                    width="232" alt=""/>
+                            
+                                <a style={{paddingLeft: '7px'}} href={image.url} key={index}>
+                                    <img src={image.image} alt={image.alt} className="responsive-img" alt=""/>
                                 </a>
-                            </div>
+
                         ))} 
-                    </div>
-                    <div className="row">
-                        <div className="col s12"><br></br></div>
+                        </div>
                     </div>
                 </div>
 
+                <div className="row">
+                        <div className="col s12"><br></br></div>
+                    </div>
             </div>
         )
     }
