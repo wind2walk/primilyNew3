@@ -41,6 +41,11 @@ export const query = graphql`
             }
             Headding
             tagline
+            menuItems {
+              label
+              linkType
+              linkURL
+            }
             socialLinks {
               image
               imageAlt

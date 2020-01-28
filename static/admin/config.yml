@@ -164,8 +164,8 @@ collections:
                   widget: "object",
                   field:
                     {
-                      label: "Description List",
-                      name: "descriptionlist",
+                      label: "Screens List",
+                      name: "screenslist",
                       widget: "list",
                       fields:
                         [
@@ -175,6 +175,17 @@ collections:
                           { label: "Image", required: false, name: "image", widget: "image" }
                         ]
                     }
+                },
+                {
+                  label: "Playstore Images",
+                  name: "playstoreImages",
+                  widget: "list",
+                  fields:
+                    [
+                      { label: "Image", required: false, name: "image", widget: "image" },
+                      { label: "Image Text", required: false, name: "alt", widget: "string" },
+                      { label: "Url", required: false, name: "url", widget: "string" },
+                    ]
                 }
               ]
           }
@@ -500,6 +511,17 @@ collections:
                   { label: "Image Description", name: "imageAlt", widget: "string" },
                   { label: "Label", name: "label", widget: "string" },
                   { label: "Link URL", name: "linkURL", widget: "string" },
+                ],
+            }
+          - {
+              label: "Menu Items",
+              name: "menuItems",
+              widget: "list",
+              fields:
+                [
+                  { label: "Label", name: "label", widget: "string" },
+                  { label: "Link Type", name: "linkType", widget: "select", options: ["internal", "external"] },
+                  { label: "Link URL", name: "linkURL", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
                 ],
             }
       - file: "src/pages/navbar/index.md"

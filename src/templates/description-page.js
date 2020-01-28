@@ -10,7 +10,7 @@ export class Description extends React.Component {
     render() {
 
         const {description: description} = this.props.data
-        console.log(this.props.data)
+        // console.log(this.props.data)
         return (
             <div className="description">
 
@@ -22,23 +22,29 @@ export class Description extends React.Component {
                         <div className="col s12"><br/></div>
                     </div>
                     <div className="row">
+                    <div className="col s6"></div>
+                        <div className="col s6 feature-items">
+                            <h4 className="description-font">{description.cardHead}</h4>
+                            <p>{description.description}</p>
+                        </div>
+                    </div>
+                    <div className="row">
                         <div className="col s4 center-align">
                             <div className="card">
                                 <img src={description.mainImage} className="responsive-img" alt=""/>
                             </div>
-                            <div className="row">
+                            {/* <div className="row">
                                 <div className="col s12"></div>
                             </div>
                             <img src={description.playstoreImage} className="responsive-img" height="67"
-                                 width="232" alt=""/>
+                                 width="232" alt=""/> */}
                         </div>
                         <div className="col s2"></div>
                         <div className="col s6">
                             <div className="feature-items">
-                                <h4 className="description-font">{description.cardHead}</h4>
-                                <p>{description.description}</p>
+{/* 
                                 <div className="row"></div>
-                                <div className="row"></div>
+                                <div className="row"></div> */}
                                 {description.cards.descriptionlist.map((card, index) => (
                                     <div className="row" key={index}>
                                         <div className="col s1 description-icon">
