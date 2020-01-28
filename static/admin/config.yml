@@ -155,7 +155,6 @@ collections:
             fields:
               [
                 { label: "Main Image", name: "mainImage", widget: "image" },
-                { label: "Play Store Image", name: "playstoreImage", widget: "image" },
                 { label: "Card Head", name: "cardHead", widget: "string" },
                 { label: "Description", name: "description", widget: "string" },
                 {

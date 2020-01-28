@@ -28,7 +28,7 @@ export class Feature extends React.Component {
         {/* <div className="col s12"> */}
         <div className="row">
           {feature.featureBody.map((feature, index) => (
-            <HoverDiv className="col s12 m6 l3" key={index}>
+            <HoverDiv className="col s12 m6 l4" key={index}>
               <div className="center-align feature-items feature-card">
                 <div className="row">
                   <div className="col s4"></div>
@@ -37,7 +37,7 @@ export class Feature extends React.Component {
                   </div>
                 </div>
                 <h5 className="">{feature.head}</h5>
-                <p>{feature.description}</p>
+                <p className>{feature.description}</p>
               </div>
             </HoverDiv>
           ))}

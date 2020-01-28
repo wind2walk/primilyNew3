@@ -23,7 +23,7 @@ export class Pricing extends React.Component {
                     <div className="col s12"></div>
 
                     <div className="col s2"></div>
-                    <div className="col s4 price-border">
+                    <div className="col l4 m4 s4 price-border">
                         <div className="single_pricing wow fadeIn price" data-wow-duration="1.5s">
                             <div className="top_text">
                                 <h5 className="pricing-head">{pricing.priceBox1.head}</h5>
@@ -53,7 +53,7 @@ export class Pricing extends React.Component {
                         <br></br>
                     </div>
                     <div className="col s0"></div>
-                    <div className="col s4 price-border-red">
+                    <div className="col l4 m4 s4 price-border-red">
                         <div className="single_pricing economy_table wow fadeIn price" data-wow-duration="1.6s">
                             <div className="top_text">
                                 <h5 className="pricing-head">{pricing.priceBox2.head}</h5>
