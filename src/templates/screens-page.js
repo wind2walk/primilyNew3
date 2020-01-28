@@ -54,8 +54,7 @@ export class Screens extends React.Component {
                             <div className="row">
                                 <div className="col s12"></div>
                             </div>
-                            <img src={screens.playstoreImage} className="responsive-img" height="67"
-                                 width="232" alt=""/>
+                            
                         </div>
                         <div className="col s2"></div>
                         <div className="col s6">
@@ -77,15 +76,14 @@ export class Screens extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col s12">
-                        <div className="feature-items center-align">
-                            <h4 className="description-font">{screens.cardFooter}</h4>
-                            <p>{screens.CardFooterdescription}</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col s12"><br></br></div>
+                        {screens.playstoreImages.map((image, index) => (
+                            <div className="col s3" key={index}>
+                                <a className="row" href={image.url}>
+                                    <img src={image.image} alt={image.alt} className="responsive-img" height="67"
+                                    width="232" alt=""/>
+                                </a>
+                            </div>
+                        ))} 
                     </div>
                     <div className="row">
                         <div className="col s12"><br></br></div>
@@ -113,7 +111,11 @@ export default () => (
                   frontmatter {
                     screens {
                       mainImage
-                      playstoreImage
+                      playstoreImages {
+                        image
+                        url
+                        alt
+                      }
                       cardHead
                       description
                       cards {
@@ -124,8 +126,6 @@ export default () => (
                           image
                         }
                       }
-                      cardFooter
-                      CardFooterdescription
                     }
                   }
                 }

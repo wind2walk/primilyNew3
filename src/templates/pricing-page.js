@@ -41,8 +41,6 @@ export class Pricing extends React.Component {
                                     </li>
                                 ))}
                             </ul>
-                            <br></br>
-                            <br></br>
                             <div className="table_info">
                                 <div className="info_head_text">
                                     <h2>${pricing.priceBox1.price}</h2>
@@ -73,6 +71,7 @@ export class Pricing extends React.Component {
                                     </li>
                                 ))}
                             </ul>
+                            <br></br>
                             <br></br>
                             <br></br>
                             <br></br>

@@ -67,10 +67,11 @@
 
   &-socialLink {
     @include medium-font;
-    font-weight: 400;
+    font-weight: 200;
+    color: white;
     text-decoration: none;
-    color: $body-light;
-    display: flex;
+    // color: $body-light;
+    // display: flex;
     align-items: center;
   }
 
