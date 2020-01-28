@@ -5,11 +5,12 @@ import PropTypes from 'prop-types'
 import {graphql, StaticQuery} from 'gatsby'
 //import '../styles/describe-page.scss';
 import '../styles/description-page.scss';
+/*
 import Box from '@material-ui/core/Box';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-
+*/
 export class Screens extends React.Component {
 
     constructor(props) {
@@ -27,6 +28,14 @@ export class Screens extends React.Component {
       }
 
     render() {
+
+        const imageSize = {
+            height: '600px',
+            boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
+        }
+        const rowHover = {
+            hover:'blue'
+        }
 
         const {screens: screens} = this.props.data
         // const { image } = this.state;
@@ -48,19 +57,15 @@ export class Screens extends React.Component {
                     </div>
                     <div className="row">
                         <div className="col s4 center-align">
-                            <div className="card">
-                                <img src={this.state.image} className="responsive-img" alt=""/>
+                            <div>
+                                <img src={this.state.image} className="responsive-img" alt="" style={imageSize}/>
                             </div>
-                            <div className="row">
-                                <div className="col s12"></div>
-                            </div>
-                            
                         </div>
                         <div className="col s2"></div>
                         <div className="col s6">
                             <div className="feature-items">
                                 {screens.cards.screenslist.map((card, index) => (
-                                    <div className="row" key={index} onClick={() => this.handleClick(card)}>
+                                    <div className="row" key={index} onClick={() => this.handleClick(card)} style={rowHover}>
                                         <div className="col s1 description-icon">
                                             <i className="Large material-icons">{card.icon}</i>
                                         </div>
@@ -80,12 +85,12 @@ export class Screens extends React.Component {
                 <div className="row">
                     <div className="col s12 center-align">
                         {screens.playstoreImages.map((image, index) => (
-                            
+
                                 <a style={{paddingLeft: '7px'}} href={image.url} key={index}>
                                     <img src={image.image} alt={image.alt} className="responsive-img" alt=""/>
                                 </a>
 
-                        ))} 
+                        ))}
                         </div>
                     </div>
                 </div>
