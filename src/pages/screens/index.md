@@ -1,29 +1,32 @@
 ---
 templateKey: screens-page
 screens:
-  cardHead: Your Mobile Phone Does It All
+  cardHead: Primily Automated Call Assistant Operation
   cards:
     screenslist:
-      - description: Your mobile phone can have 2 or more phone numbers
-        head: One Phone 2 Numbers
-        icon: pie_chart
-        image: /img/operHome-H350.png
-      - description: Know if it is business or personal before answering
-        head: Personal & Business Calls
-        icon: perm_phone_msg
-        image: /img/operCallmenu-H350.png
-      - description: Auto generated Call Menu for most of your needs
-        head: 'Setup in Minutes '
-        icon: phonelink_setup
-        image: /img/operLocation-H350.png
-      - description: 'Separate call, text and email notifications'
-        head: Notification & Call Logging
-        icon: notifications
-        image: /img/screen-callmenu.png
-      - description: No missed call when you are away from our office
-        head: Be Mobile as You Like
-        icon: phonelink_ring
-        image: /img/operHome-H350.png
+    - description: >-
+      Select your Call Menu to modify the key menu selection the caller will get.
+      head: Call Menu Modification is easily done on you phone
+      icon: pie_chart
+      image: /img/operHome-H350.png
+    - description: >-
+      In this example we are going to edit the business location by selecting Key "1". This same process is the same for any key # in the Call Menu. Select the menu key gets you to the edit screen to make your modification.
+      head: Personal & Business Calls
+      icon: perm_phone_msg
+      image: /img/operCallmenu-H350.png
+    - description: >-
+      Creating the speech the caller will hear is easily done using Text-To-Speech. You just type in what you want the caller to here. You can also select the Text Message check box to also have the text sent to the caller's mobile phone. This way a an address can be used to get driving directions or open a web site. 
+      head: Simpily edit text to modify the menu's speech 
+      icon: phonelink_setup
+      image: /img/operLocation-H350.png
+    - description: 'Separate call, text and email notifications'
+      head: Notification & Call Logging
+      icon: notifications
+      image: /img/screen-callmenu.png
+    - description: No missed call when you are away from our office
+      head: Be Mobile as You Like
+      icon: phonelink_ring
+      image: /img/screen-callmenu.png
   description: >-
     The Primily Call Assistant is Mobile Centeric...Your mobile phone is all you
     need. Call Menu changes, text messages, voicemail, call reporting,
@@ -38,4 +41,3 @@ screens:
       url: https://play.google.com/store?hl=en
       alt:  android
 ---
-
