@@ -27,22 +27,22 @@ screens:
         icon: phonelink_setup
         image: /img/operLocation-H350.png
       - description: >-
-          Now do a Save then select Demo or first make additioanl changes to
-          other key settings you wanr done, like for the call greeting, business
-          hours, text message on web links, etc.
+          **NEEDS CORRECT IMAGE** Now do a Save then select Demo or first make
+          additioanl changes to other key settings you wanr done, like for the
+          call greeting, business hours, text message on web links, etc.
         head: Save your changes.
         icon: notifications
         image: /img/screen-callmenu.png
       - description: >-
-          Use Demo to here your change as your callers will and select you keys
-          to verify everything is correct.
+          **NEEDS CORRECT IMAGE** Use Demo to here your change as your callers
+          will and select you keys to verify everything is correct.
         head: Demo your changes
         icon: phonelink_ring
         image: /img/screen-callmenu.png
       - description: >-
-          Select Publish to have your change applied to you phone number. To be
-          sure all is correct call your number and again select all the key
-          selection to make sure everything is right.
+          **NEEDS CORRECT IMAGE** Select Publish to have your change applied to
+          you phone number. To be sure all is correct call your number and again
+          select all the key selection to make sure everything is right.
         head: Update your changes to your live number
   description: >-
     The Primily Call Assistant is Mobile Centeric...Your mobile phone is all you
