@@ -1,7 +1,7 @@
 ---
 templateKey: pricing-page
 pricing:
-  description1: Low Monthly Subscription - No Contracts - Cancel Any Time
+  description1: Low Monthly Subscription - No Contracts - Cancel Online Any Time
   description2: All features at one low price.
   priceBox1:
     description: >-
@@ -25,7 +25,7 @@ pricing:
       - list: 'Notification for calls, text messages, voicemail.'
     head: Low Monthly Subscription
     head2: One Phone Number
-    price: '15'
+    price: '7.95'
   pricingHead: Simple Pricing
   ticImage: /img/tic.png
 ---

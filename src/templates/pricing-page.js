@@ -80,7 +80,7 @@ export class Pricing extends React.Component {
                                     <h2>${pricing.priceBox2.price}</h2>
                                 </div>
                                 <a href="" className="waves-effect waves-light btn">sign up</a>
-                                <a href="" className="price-padding">Cancel online at anytime</a>
+                                <a href="" className="price-padding">Cancel anytime</a>
                             </div>
                         </div>
                         <br></br>
