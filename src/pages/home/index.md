@@ -14,7 +14,7 @@ home:
         the caller with a Call Menu with information on your hours, location,
         web site, services and other information you want to provide callers.
       imagealt: callOverview-1a
-    - imageSrc: /img/one-line-H386.png
+    - imageSrc: /img/slidercontrol-h386.png
       imageText: >-
         Take back control of your phone with the Primily Automated Call
         Assistant and a 2nd number. Keep business and personals calls, texting
