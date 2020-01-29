@@ -11,11 +11,10 @@ export class Feature extends React.Component {
 
       const { feature } = this.props.data
       const HoverDiv = styled.div`
-	
 	    :hover {
-		    box-shadow: -4px -4px 40px 0 rgba(0,0,0,0.1) inset;
+		    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.1) ;
             transition: 0.3s;
-           border-radius: 5px;
+            border-radius: 2px;
 	    }
         `
 
@@ -28,8 +27,8 @@ export class Feature extends React.Component {
         {/* <div className="col s12"> */}
         <div className="row">
           {feature.featureBody.map((feature, index) => (
-            <HoverDiv className="col s12 m6 l4" key={index}>
-              <div className="center-align feature-items feature-card">
+            <div className="col s12 m6 l4" key={index}>
+              <HoverDiv className="center-align feature-items feature-card">
                 <div className="row">
                   <div className="col s4"></div>
                   <div className="col s3">
@@ -38,8 +37,8 @@ export class Feature extends React.Component {
                 </div>
                 <h5 className="">{feature.head}</h5>
                 <p className>{feature.description}</p>
-              </div>
-            </HoverDiv>
+              </HoverDiv>
+            </div>
           ))}
         </div>
         {/* </div> */}
