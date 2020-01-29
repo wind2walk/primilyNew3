@@ -3,8 +3,9 @@ templateKey: feature-page
 feature:
   featureBody:
     - description: >-
-        Automated Auto Attendant to answer you calls 24X7. Supports single and
-        multi-level Call Menus.
+        Primily automated Call Attendant will answer you calls 24X7 when you are
+        not available. The Call Attendent supports single and multi-level Call
+        Menus.
       head: Automated Auto Attendant
       icon: record_voice_over
     - description: Your mobile phone now has a Business and a Personal number
