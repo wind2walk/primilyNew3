@@ -28,6 +28,7 @@ const settings = {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     autoplay: false,
     speed:500,
     autoplaySpeed: 10000
