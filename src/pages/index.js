@@ -11,8 +11,8 @@ import Pricing from '../templates/pricing-page';
 import Demo from '../templates/demo-page';
 import Home from '../templates/home-page';
 import Layout from "../components/Layout";
-import Description from '../templates/description-page';
-import Screens from '../templates/screens-page';
+//import Description from '../templates/description-page';
+//import Screens from '../templates/screens-page';
 //import BlogRoll from '../templates/blog-page';
 //import ImageDescription from "../templates/imagedescription-page";
 //import Appgallery from '../templates/appgallery-page';
@@ -29,19 +29,23 @@ export const HomePageTemplate = ({home}) => {
                     <div id="features" className="section scrollspy">
                         <Feature/>
                     </div>
-                    <div id="describe" className="section scrollspy">
+                    {/*<
+                    div id="describe" className="section scrollspy">
                         <Describe/>
                     </div>
+                    */}
                     <div id="video" className="section scrollspy">
                         <Video/>
                     </div>
 
+                    {/*
                     <div id="description" className="section scrollspy">
                         <Description/>
                     </div>
                     <div id="screens" className="section scrollspy">
                         <Screens/>
                     </div>
+                    *?}
 
                     {/* Add new screen Component here */}
 

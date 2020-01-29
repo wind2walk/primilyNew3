@@ -6,6 +6,10 @@ import Helmet from "react-helmet";
 
 import Layout from "../components/Layout";
 import HTMLContent from "../components/Content";
+
+import Description from '../templates/description-page';
+import Screens from '../templates/screens-page';
+
 import "../styles/about-page.scss";
 
 export const DetailsPageTemplate = props => {
@@ -29,6 +33,14 @@ export const DetailsPageTemplate = props => {
         <div className="col s2">
         </div>
       </div>
+
+      <div id="description" className="section scrollspy">
+        <Description/>
+      </div>
+      <div id="screens" className="section scrollspy">
+        <Screens/>
+      </div>
+
     </div>
   );
 };
