@@ -14,7 +14,7 @@ export class ImageDescription extends React.Component {
         return (
             <div className="description">
 
-                <div className="container">
+                <div className="container"> 
                     <div className="row">
                         <div className="col s12"><br/></div>
                     </div>

@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import {graphql, StaticQuery} from 'gatsby'
 //import '../styles/describe-page.scss';
 import '../styles/description-page.scss';
+import PlaystoreImages from '../templates/playstoreimages-page';
 /*
 import Box from '@material-ui/core/Box';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -84,13 +85,7 @@ export class Screens extends React.Component {
                 <div className="container-fluid">
                 <div className="row">
                     <div className="col s12 center-align">
-                        {screens.playstoreImages.map((image, index) => (
-
-                                <a style={{paddingLeft: '7px'}} href={image.url} key={index}>
-                                    <img src={image.image} alt={image.alt} className="responsive-img" alt=""/>
-                                </a>
-
-                        ))}
+                        <PlaystoreImages /> 
                         </div>
                     </div>
                 </div>
@@ -119,11 +114,6 @@ export default () => (
                   frontmatter {
                     screens {
                       mainImage
-                      playstoreImages {
-                        image
-                        url
-                        alt
-                      }
                       cardHead
                       description
                       cards {

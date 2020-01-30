@@ -6,6 +6,7 @@ import { graphql, StaticQuery } from 'gatsby'
 
 //import CarouselComponent from '../components/carousel'
 import SlideView from "../components/SlideView";
+import PlaystoreImages from '../templates/playstoreimages-page';
 
 export class Home extends React.Component {
     render() {
@@ -13,9 +14,12 @@ export class Home extends React.Component {
         return (
             <div className="container">
                 <SlideView content={home.sliderImages} />
+                <div className="row"><div className="col s12"></div></div>
+                <PlaystoreImages />
+
             </div>
         )
-    }
+    } 
 }
 
 Home.propTypes = {

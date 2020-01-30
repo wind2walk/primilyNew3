@@ -19,7 +19,7 @@ export class FAQPageTemplate extends React.Component {
           this.state.items.push({i: count, iconToggle: true, item: i});
       }
   }
-
+ 
   handleClick = (e, index) => {
       const { items } = this.state;
       items.filter( item => {

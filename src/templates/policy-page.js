@@ -17,7 +17,7 @@ export const PolicyPageTemplate = props => {
         <div className="col s12">
           <h3 className="grey-dark">{page.frontmatter.title}</h3>
         </div>
-
+ 
         <div className="col s12">
 
         </div>
