@@ -10,20 +10,20 @@ home:
       imagealt: assistant
     - imageSrc: /img/with-customer.png
       imageText: >-
-        When you are bussy let the Primily Call Assistant answer and presents
-        the caller with a Call Menu with information on your hours, location,
-        web site, services and other information you want to provide callers.
+        When you are busy let the Primily Call Assistant answer and give the
+        caller information on your hours, location, web site, services and other
+        information often requested.
       imagealt: callOverview-1a
     - imageSrc: /img/slidercontrol-h386.png
       imageText: >-
         Take back control of your phone with the Primily Automated Call
-        Assistant and a 2nd number. Keep business and personals calls, texting
-        and voicemail seperate. Make Robo calls a think of the past.
+        Assistant. With a 2nd IVR number you can weed out the Robocalls and keep
+        your business and personals calls, texting and voicemails seperate.
       imagealt: callallOverview_resize
     - imageSrc: /img/sliderphone-h386.png
       imageText: >-
-        Easly know if you have a business or personal call. Manage 2 numbers
-        with with one phone.
+        For mobile only users it is now easly know if you have a incoming
+        business or personal call. Two numbers on one mobile phone.
       imagealt: callOverview-3
     - imageSrc: /img/home-menu-sched-h386.png
       imageText: >-
