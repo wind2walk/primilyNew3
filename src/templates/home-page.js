@@ -17,7 +17,7 @@ export class Home extends React.Component {
             <div className="container HOME-page">
                 <SlideView content={home.sliderImages} />
                 <div className="row"><div className="col s12"></div></div>
-                <PlaystoreImages />
+
 
             </div>
         )
