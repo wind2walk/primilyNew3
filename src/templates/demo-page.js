@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types'
 //import { Link, graphql, StaticQuery } from 'gatsby'
 import { graphql, StaticQuery } from 'gatsby'
-
+import PlaystoreImages from '../templates/playstoreimages-page';
 export class Demo extends React.Component {
     render() {
 
@@ -13,16 +13,15 @@ export class Demo extends React.Component {
             {/* <div className="row"><div className="col s12"><br></br></div></div>
             <div className="row"><div className="col s12"><br></br></div></div> */}
             <div className="container DEMO-page">
-                <div className="row">
-                    <div className="col s12 feature-items center-align">
-                        <h5>{demo.demoHead}</h5>
+                <div className="row center-align">
+                    <div className="col s12">
+                        <h4>{demo.demoHead}</h4>
                         <p>{demo.description}</p>
                     </div>
-                    {/* <div className="col s3"></div>
-                    <div className="col s3"><img src={demo.demoImages.src1} alt="" /></div>
-                    <div className="col s0"></div>
-                    <div className="col s3"><img src={demo.demoImages.src2} alt="" /></div>
-                    <div className="col s3"></div> */}
+                    <div className="col s12"><br></br></div>
+                    <PlaystoreImages />
+                    {/* <div className="col s12"><img src={demo.demoImages.src1} style={{paddingRight: '5px'}} alt="" /><img src={demo.demoImages.src2} alt="" /></div> */}
+                    {/* <div className="col s6"><img src={demo.demoImages.src2} alt="" /></div> */}
                 </div>
                 <br></br>
                 {/* <div className="row">

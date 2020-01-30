@@ -188,6 +188,23 @@ collections:
                 }
               ]
           }
+      - file: "src/pages/playstoreImages/index.md"
+        label: "Play store Images"
+        name: "playstoreImages"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "playstoreImages-page" }
+          - {
+              label: "Playstore Images",
+              name: "playstoreImages",
+              widget: "list",
+              fields:
+                [
+                  { label: "Image", required: false, name: "image", widget: "image" },
+                  { label: "Image Text", required: false, name: "alt", widget: "string" },
+                  { label: "Url", required: false, name: "url", widget: "string" },
+                ]
+            }
+          }
       - file: "src/pages/imagedescription/index.md"
         label: "Image Description"
         name: "imagedescription"
