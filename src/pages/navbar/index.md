@@ -4,14 +4,11 @@ menuItems:
   - label: Features
     linkType: Features
     linkURL: /#features
-  - label: Describe
-    linkType: Describe
-    linkURL: /#describe
   - label: Pricing
     linkType: Pricing
     linkURL: /#pricing
   - label: Demo
-    linkType: demo
+    linkType: Demo
     linkURL: /#demo
   - label: Contact Us
     linkType: contactus
