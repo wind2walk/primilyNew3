@@ -28,7 +28,8 @@ export class PlaystoreImages extends React.Component {
         }
 
         const {playstoreImages: playstoreImages} = this.props.data
-        // const { image } = this.state;
+        console.log( '**PlaystoreImages**')
+        console.log( 'playstoreImages=> '+ JSON.stringify(playstoreImages) )
         return (
 
             <div className="description">

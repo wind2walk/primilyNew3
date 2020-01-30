@@ -10,6 +10,8 @@ export class Feature extends React.Component {
     render() {
 
       const { feature } = this.props.data
+        console.log( '**Feature**')
+        console.log( 'feature=> '+ JSON.stringify(feature) )
       const HoverDiv = styled.div`
 	    :hover {
 		    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.1) ;
@@ -22,7 +24,7 @@ export class Feature extends React.Component {
     <div className="feature FEATURE-page">
       <div className="row"><div className="col s12"><br></br></div></div>
       <div className="row"><div className="col s12"><br></br></div></div>
-      <div className="container"> 
+      <div className="container">
       {/* <div className="col s1"></div> */}
         {/* <div className="col s12"> */}
         <div className="row">

@@ -10,7 +10,8 @@ export class Description extends React.Component {
     render() {
 
         const {description: description} = this.props.data
-        // console.log(this.props.data)
+        console.log( '**Description**')
+        console.log( 'description=> '+ JSON.stringify(description) )
         return (
             <div className="description">
 

@@ -8,6 +8,8 @@ import {graphql, StaticQuery} from 'gatsby'
 export class Pricing extends React.Component {
     render() {
         const {pricing} = this.props.data
+        console.log( '**Pricing**')
+        console.log( 'pricing=> '+ JSON.stringify(pricing) )
         return (
             <div className="container">
                                 <div className="row">
@@ -21,18 +23,18 @@ export class Pricing extends React.Component {
                     <div className="col s1 m1 l1"></div>
                 <div className="col s10 m5 l5">
                         <div className="card-panel hoverable center-align">
-                        
+
                             <div className="row">
                             <div className="col s12">
                                         <i className="material-icons indigo-text pricing-box">access_alarms</i>
                                 </div>
                                 <div className="col s12">
                                     <h5 className="black-text">{pricing.priceBox1.head}</h5>
-                                    
+
                                     <h4 className="indigo-text">${pricing.priceBox1.price}</h4>
                                 </div>
                                 <div className="col s12">
-                                 
+
                                 <table className="highlight centered">
                                     <tbody className="grey-text">
                                         {pricing.priceBox1.featureList.map((list, index) => (
@@ -41,13 +43,13 @@ export class Pricing extends React.Component {
                                         </tr>
                                         ))}
                                     </tbody>
-                                </table>   
+                                </table>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col s12">
-                                 
-                                <a className="waves-effect waves-light btn indigo darken-4">Buy Now</a>   
+
+                                <a className="waves-effect waves-light btn indigo darken-4">Buy Now</a>
                                 </div>
                             </div>
                         </div>
@@ -59,11 +61,11 @@ export class Pricing extends React.Component {
                                         <i className="material-icons indigo-text pricing-box">flash_on</i>
                                         <div className="col s12">
                                     <h5 className="black-text">{pricing.priceBox2.head}</h5>
-                                    
+
                                     <h4 className="indigo-text">${pricing.priceBox2.price}</h4>
                                 </div>
                                 <div className="col s12">
-                                 
+
                                 <table className="highlight centered">
                                     <tbody className="grey-text">
                                         {pricing.priceBox2.featureList.map((list, index) => (
@@ -72,15 +74,15 @@ export class Pricing extends React.Component {
                                         </tr>
                                         ))}
                                     </tbody>
-                                </table>   
+                                </table>
                                 </div>
 
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col s12">
-                                 
-                                <a className="waves-effect waves-light btn indigo darken-4">Buy Now</a>   
+
+                                <a className="waves-effect waves-light btn indigo darken-4">Buy Now</a>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +90,7 @@ export class Pricing extends React.Component {
                     <div className="col s1 m1 l1"></div>
                 </div>
             </div>
-            
+
             // <div>
             //     <div className="row">
             //         <div className="col s12"><br/></div>
