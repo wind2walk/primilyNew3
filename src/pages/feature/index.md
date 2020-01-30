@@ -3,21 +3,23 @@ templateKey: feature-page
 feature:
   featureBody:
     - description: >-
-        Automated Auto Attendant to answer you calls 24X7. Supports single and
-        multi-level Call Menus.
+        Primily automated Call Attendant will answer you calls 24X7 when you are
+        not available. 
       head: Automated Auto Attendant
       icon: record_voice_over
-    - description: Your mobile phone now has a Business and a Personal number
+    - description: >-
+        With a business and a personal number all of your calls, text &
+        voicemail are kept seperate.
       head: One Phone 2 Numbers
       icon: pie_chart
     - description: >-
-        Place and receive outgoing and incoming calls with your business caller
-        id. One phone with 2 numbers. Keep business and personals call separate.
-      head: Outgoing and Incoming Calls
+        Menu selection speeks and can text the caller needed information. Your
+        hours, location, etc.
+      head: Speech and Texting Information
       icon: local_phone compare_arrows person
     - description: >-
         Your call greeting automatically lets callers know if your business if
-        closed from your schedule.
+        open or closed.
       head: Daily Open & Closed Schedule
       icon: schedule
     - description: No equipment or phone number changes are required.

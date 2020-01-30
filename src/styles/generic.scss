@@ -2,7 +2,9 @@
 @import "./mixins.scss";
 
 html {
-  font-size: 16px;
+  /*font-size: 16px;*/
+  font-size: 14px;
+  font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -10,9 +12,17 @@ html {
   background-color: $background-light;
 }
 
+/*font-family: 'Open Sans', sans-serif;
+color: #546E7A;
+font-size: 14px;
+font-weight: 400;
+background: #fff;
+overflow-x: hidden;*/
+
 body {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  /*font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
   color: $body-dark;
 }
  

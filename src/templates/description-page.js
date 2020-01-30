@@ -14,7 +14,7 @@ export class Description extends React.Component {
         return (
             <div className="description">
 
-                <div className="container">
+                <div className="container DESCRIPTION-page">
                     <div className="row">
                         <div className="col s12"><br/></div>
                     </div>
@@ -42,7 +42,7 @@ export class Description extends React.Component {
                         <div className="col s2"></div>
                         <div className="col s6">
                             <div className="feature-items">
-{/* 
+{/*
                                 <div className="row"></div>
                                 <div className="row"></div> */}
                                 {description.cards.descriptionlist.map((card, index) => (

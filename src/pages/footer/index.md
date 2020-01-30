@@ -18,7 +18,7 @@ menuItems:
   - label: Demo
     linkType: demo
     linkURL: /#demo
-  - label: Contactus
+  - label: Contact Us
     linkType: contactus
     linkURL: /contact
   - label: Details
@@ -27,7 +27,7 @@ menuItems:
   - label: Policy
     linkType: policy
     linkURL: /policy
-  - label: Aboutus
+  - label: About Us
     linkType: aboutus
     linkURL: /about
 socialLinks:
@@ -48,4 +48,3 @@ socialLinks:
     label: email us
     linkURL: 'mailto:contact@js-wakanda.org'
 ---
-

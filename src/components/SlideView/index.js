@@ -18,8 +18,9 @@ const Text = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: large;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
   text-align: center;
 `;
 
@@ -28,6 +29,7 @@ const settings = {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: false,
     autoplay: false,
     speed:500,
     autoplaySpeed: 10000

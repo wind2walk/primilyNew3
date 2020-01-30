@@ -12,7 +12,7 @@ export class Demo extends React.Component {
         <div>
             {/* <div className="row"><div className="col s12"><br></br></div></div>
             <div className="row"><div className="col s12"><br></br></div></div> */}
-            <div className="container">
+            <div className="container DEMO-page">
                 <div className="row center-align">
                     <div className="col s12">
                         <h4>{demo.demoHead}</h4>

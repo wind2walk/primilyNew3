@@ -44,7 +44,7 @@ export class Screens extends React.Component {
 
             <div className="description">
 
-                <div className="container">
+                <div className="container SCREENS-page">
                     <div className="row">
                         <div className="col s12"><br/></div>
                     </div>
