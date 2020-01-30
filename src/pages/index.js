@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import {graphql} from "gatsby";
 import Helmet from "react-helmet";
 //import isAfter from "date-fns/is_after";
-import Feature from '../templates/feature-page';
+//import Feature from '../templates/feature-page';
+import Features from '../templates/features-component';
 import Video from '../templates/video-page';
 
 import Pricing from '../templates/pricing-page';
@@ -27,7 +28,7 @@ export const HomePageTemplate = ({home}) => {
                         <Home/>
                     </div>
                     <div id="features" className="section scrollspy">
-                        <Feature/>
+                        <Features/>
                     </div>
                     {/*<
                     div id="describe" className="section scrollspy">
