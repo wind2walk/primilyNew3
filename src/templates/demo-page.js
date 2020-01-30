@@ -19,7 +19,7 @@ export class Demo extends React.Component {
                         <p>{demo.description}</p>
                     </div>
                     <div className="col s12"><br></br></div>
-                    {/*<PlaystoreImages />*/}
+                    <PlaystoreImages />
                     {/* <div className="col s12"><img src={demo.demoImages.src1} style={{paddingRight: '5px'}} alt="" /><img src={demo.demoImages.src2} alt="" /></div> */}
                     {/* <div className="col s6"><img src={demo.demoImages.src2} alt="" /></div> */}
                 </div>
