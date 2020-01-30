@@ -15,7 +15,7 @@ export class Appgallery extends React.Component {
 
 
   <div className="container-fluid grey lighten-4">
-      <div className="container">
+      <div className="container Appgallery-page">
         <div className="row">
           <div className="col s12"><h3 className="center-align grey-text h-style">{appGalley.appGalleryHead}</h3></div>
         </div>

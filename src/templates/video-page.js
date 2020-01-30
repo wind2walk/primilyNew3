@@ -11,29 +11,25 @@ export class Video extends React.Component {
       const { video: video} = this.props.data
       // console.log(this.props.data)
       return (
-      <div className="grey lighten-4">
-        {/* <div className="row"><div className="col s12"><br></br></div></div>
-        <div className="row"><div className="col s12"><br></br></div></div> */}
+          <div className="grey lighten-4">
+            {/* <div className="row"><div className="col s12"><br></br></div></div>
+            <div className="row"><div className="col s12"><br></br></div></div> */}
 
-        <div className="container">
-
-          <div className="row">
-            <div className="col s1"></div>
-            <div className="col s10">
-
-              <div className="video-container">
-                <iframe width="853" height="480" src={video.src} frameBorder="0" allowFullScreen></iframe>
+            <div className="container VIDEO-page">
+              <div className="row">
+                <div className="col s1"></div>
+                <div className="col s10">
+                  <div className="video-container">
+                    <iframe width="853" height="480" src={video.src} frameBorder="0" allowFullScreen></iframe>
+                  </div>
+                </div>
+                <div className="col s1"></div>
               </div>
             </div>
-            <div className="col s1">
-            </div>
           </div>
-
-    </div>
-    </div>
-    )
-  }
-  }
+      )
+    }
+}
 
   Video.propTypes = {
       data: PropTypes.object

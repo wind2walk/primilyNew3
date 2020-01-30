@@ -16,7 +16,7 @@ export const DetailsPageTemplate = props => {
   const { page } = props;
 
   return (
-    <div className="container">
+    <div className="container DETAILS-page">
       <div className="row">
         <div className="col s12 center-align">
           <h3 className="grey-dark">{page.frontmatter.title}</h3>

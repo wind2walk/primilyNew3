@@ -11,7 +11,7 @@ export class Home extends React.Component {
     render() {
         const {home} = this.props.data
         return (
-            <div className="container">
+            <div className="container HOME-page">
                 <SlideView content={home.sliderImages} />
             </div>
         )

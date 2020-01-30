@@ -9,7 +9,7 @@ export class Pricing extends React.Component {
     render() {
         const {pricing} = this.props.data
         return (
-            <div>
+            <div className="PRICING-page">
                 <div className="row">
                     <div className="col s12"><br/></div>
                 </div>

@@ -19,7 +19,7 @@ export class Feature extends React.Component {
         `
 
       return (
-    <div className="feature">
+    <div className="feature FEATURE-page">
       <div className="row"><div className="col s12"><br></br></div></div>
       <div className="row"><div className="col s12"><br></br></div></div>
       <div className="container">

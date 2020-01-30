@@ -14,7 +14,7 @@ export class ImageDescription extends React.Component {
         return (
             <div className="description">
 
-                <div className="container">
+                <div className="container IMAGEDESCRIPTION-page">
                     <div className="row">
                         <div className="col s12"><br/></div>
                     </div>
@@ -57,44 +57,6 @@ export class ImageDescription extends React.Component {
                             </div>
                         </div>
                     </div>
-
-                    {/*
-                    <div className="row">
-                        <div className="col s4 center-align">
-                            <div className="card">
-                                <img src={imagedescription.mainImage} className="responsive-img" alt=""/>
-                            </div>
-                            <div className="row">
-                                <div className="col s12"></div>
-                            </div>
-                            <img src={imagedescription.playstoreImage} className="responsive-img" height="67"
-                                 width="232" alt=""/>
-                        </div>
-                        <div className="col s2"></div>
-                        <div className="col s6">
-                            <div className="feature-items">
-                                <h4 className="description-font">{imagedescription.cardHead}</h4>
-                                <p>{imagedescription.description}</p>
-                                <div className="row"></div>
-                                <div className="row"></div>
-                                {imagedescription.cards.descriptionlist.map((card, index) => (
-                                    <div className="row" key={index}>
-                                        <div className="col s1 description-icon">
-                                            <i className="Large material-icons">{card.icon}</i>
-                                        </div>
-                                        <div className="col s11">
-                                            <div className="feature-items">
-                                                <h5>{card.head}</h5>
-                                                <p>{card.description}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                    */}
-
                     <div className="row">
                         <div className="col s12"><br></br></div>
                     </div>
