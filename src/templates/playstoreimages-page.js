@@ -33,15 +33,13 @@ export class PlaystoreImages extends React.Component {
 
             <div className="description">
                 <div className="container-fluid">
-                <div className="row">
-                    <div className="col s12 center-align">
-                        {playstoreImages.map((image, index) => (
-
+                    <div className="row">
+                        <div className="col s12 center-align">
+                            {playstoreImages.map((image, index) => (
                                 <a style={{paddingLeft: '7px'}} href={image.url} key={index}>
                                     <img src={image.image} alt={image.alt} className="responsive-img" alt=""/>
                                 </a>
-
-                        ))} 
+                            ))}
                         </div>
                     </div>
                 </div>
