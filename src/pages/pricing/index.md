@@ -10,20 +10,19 @@ pricing:
     featureList:
       - list: Call Greeting
       - list: Business Hours
-      - list: Location with text for driving directions
       - list: Your web site link text to caller
       - list: Text-To-Speech Voices
-    head: Demo using actual phone call
+    head: Starter Plan
     head2: Modify Call Menu and Voice
     price: 0
   priceBox2:
     description: All Quick Setup and Advanced features
     featureList:
-      - list: Select any area code & a number
+      - list: Select any area.
       - list: Basic and Custom Call Menus
       - list: Call Reports
-      - list: 'Notification for calls, text messages, voicemail.'
-    head: Low Monthly Subscription
+      - list: 'Notifications.'
+    head: Premium Plan
     head2: One Phone Number
     price: '7.95'
   pricingHead: Simple Pricing

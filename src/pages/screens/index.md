@@ -50,12 +50,5 @@ screens:
     notifications, subscription and billing. A separate computer is not required
     or web site is not required.
   mainImage: /img/screen-callmenu.png
-  playstoreImages:
-    - alt: apple
-      image: /img/d1.png
-      url: 'https://www.apple.com/in/'
-    - alt: android
-      image: /img/d2.png
-      url: 'https://play.google.com/store?hl=en'
 ---
 

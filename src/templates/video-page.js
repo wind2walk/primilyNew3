@@ -26,10 +26,11 @@ export class Video extends React.Component {
                 <div className="col s1"></div>
               </div>
             </div>
-          </div>
-      )
-    }
-}
+          
+    </div>
+    )
+  }
+  }
 
   Video.propTypes = {
       data: PropTypes.object

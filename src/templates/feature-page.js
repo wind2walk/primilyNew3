@@ -22,7 +22,7 @@ export class Feature extends React.Component {
     <div className="feature FEATURE-page">
       <div className="row"><div className="col s12"><br></br></div></div>
       <div className="row"><div className="col s12"><br></br></div></div>
-      <div className="container">
+      <div className="container"> 
       {/* <div className="col s1"></div> */}
         {/* <div className="col s12"> */}
         <div className="row">
