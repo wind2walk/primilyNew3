@@ -34,13 +34,11 @@ export class Pricing extends React.Component {
                                 <div className="col s12">
                                     <h5 className="black-text">{pricing.priceBox1.head}</h5>
                                     <h4 className="indigo-text">${pricing.priceBox1.price}</h4>
-
                                 </div>
                                 <div className="col s12">
                                     <p>{pricing.priceBox1.description}</p>
                                 </div>
                                 <div className="col s12">
-
                                     <table className="highlight centered">
                                         <tbody className="grey-text">
                                         {pricing.priceBox1.featureList.map((list, index) => (
@@ -54,7 +52,6 @@ export class Pricing extends React.Component {
                             </div>
                             <div className="row">
                                 <div className="col s12">
-
                                     <a className="waves-effect waves-light btn indigo darken-4">SIGN UP</a>
                                 </div>
                             </div>
@@ -74,7 +71,6 @@ export class Pricing extends React.Component {
                                     <p>{pricing.priceBox2.description}</p>
                                 </div>
                                 <div className="col s12">
-
                                     <table className="highlight centered">
                                         <tbody className="grey-text">
                                         {pricing.priceBox2.featureList.map((list, index) => (
