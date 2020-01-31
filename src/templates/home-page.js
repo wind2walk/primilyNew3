@@ -11,6 +11,8 @@ import PlaystoreImages from './playstoreImages-page';
 export class Home extends React.Component {
     render() {
         const {home} = this.props.data
+        console.log( '**Home**')
+        console.log( 'home=> '+ JSON.stringify(home) )
         return (
             <div className="container HOME-page">
                 <SlideView content={home.sliderImages} />
@@ -19,7 +21,7 @@ export class Home extends React.Component {
 
             </div>
         )
-    } 
+    }
 }
 
 Home.propTypes = {

@@ -4,14 +4,11 @@ logoImage:
   image: /img/logo.jpg
   imageAlt: Logo
 Headding: Primily
-tagline: Make Your Own IVR
+tagline: Make Your Own Automated Call Assistant
 menuItems:
   - label: Features
     linkType: Features
     linkURL: /#features
-  - label: Describe
-    linkType: Describe
-    linkURL: /#describe
   - label: Pricing
     linkType: Pricing
     linkURL: /#pricing

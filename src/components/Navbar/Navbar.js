@@ -39,6 +39,8 @@ const Navbar = props => {
     return null;
   }
   const data = props.data.edges[0].node.frontmatter;
+//  console.log( '**NavbarTemplate**')
+  console.log( 'data=> '+ JSON.stringify(data) )
   return <NavbarTemplate data={data} />;
 };
 

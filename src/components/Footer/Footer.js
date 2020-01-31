@@ -95,6 +95,8 @@ const Footer = (props) => {
     return null;
   }
   const data = props.data.edges[0].node.frontmatter;
+  console.log( '**FooterTemplate**')
+  console.log( 'data=> '+ JSON.stringify(data) )
   return <FooterTemplate data={data} />;
 };
 

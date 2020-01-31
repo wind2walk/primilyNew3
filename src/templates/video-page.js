@@ -9,7 +9,8 @@ export class Video extends React.Component {
     render() {
 
       const { video: video} = this.props.data
-      // console.log(this.props.data)
+        console.log( '**Video**')
+        console.log( 'video=> '+ JSON.stringify(video) )
       return (
           <div className="grey lighten-4">
             {/* <div className="row"><div className="col s12"><br></br></div></div>
@@ -26,7 +27,7 @@ export class Video extends React.Component {
                 <div className="col s1"></div>
               </div>
             </div>
-          
+
     </div>
     )
   }

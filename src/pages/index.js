@@ -4,7 +4,6 @@ import {graphql} from "gatsby";
 import Helmet from "react-helmet";
 //import isAfter from "date-fns/is_after";
 import Feature from '../templates/feature-page';
-import Describe from '../templates/describe-page';
 import Video from '../templates/video-page';
 
 import Pricing from '../templates/pricing-page';
@@ -16,6 +15,7 @@ import Layout from "../components/Layout";
 //import BlogRoll from '../templates/blog-page';
 //import ImageDescription from "../templates/imagedescription-page";
 //import Appgallery from '../templates/appgallery-page';
+//import Describe from '../templates/describe-page';
 
 export const HomePageTemplate = ({home}) => {
     return (
@@ -136,54 +136,6 @@ export const pageQuery = graphql`
               browserTitle
               title
               description
-            }
-          }
-        }
-      }
-    }
-    pricingData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "pricing-page" } } }) {
-      edges {
-        node {
-          frontmatter {
-            pricing {
-              pricingHead
-              description1
-              description2
-              ticImage
-              priceBox1 {
-                head
-                head2
-                description
-                featureList {
-                  list
-                }
-                price
-              }
-              priceBox2 {
-                head
-                head2
-                description
-                featureList {
-                  list
-                }
-                price
-              }
-            }
-          }
-        }
-      }
-    }
-    demoData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "demo-page" } } }) {
-      edges {
-        node {
-          frontmatter {
-            demo {
-              demoHead
-              description
-              demoImages {
-                src1
-                src2
-              }
             }
           }
         }

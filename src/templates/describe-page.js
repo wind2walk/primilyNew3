@@ -9,7 +9,8 @@ export class Describe extends React.Component {
     render() {
 
         const {describe: describe} = this.props.data
-        // console.log(this.props.data)
+        console.log( '**Describe**')
+        console.log( 'describe=> '+ JSON.stringify(describe) )
         return (
             <div className="describe DESCRIBE-page">
                 <div className="grey lighten-4">
