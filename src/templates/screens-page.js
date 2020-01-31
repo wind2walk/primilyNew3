@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import {graphql, StaticQuery} from 'gatsby'
 //import '../styles/describe-page.scss';
 import '../styles/description-page.scss';
-import PlaystoreImages from './playstoreImages-page';
+import PlaystoreImages from './playstoreimages-page';
 /*
 import Box from '@material-ui/core/Box';
 import CssBaseline from '@material-ui/core/CssBaseline';

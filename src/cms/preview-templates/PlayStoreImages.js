@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { PlaystoreImages } from "../../templates/playstoreImages-page";
+import { PlaystoreImages } from "../../templates/playstoreimages-page";
 
 const PlaystoreImagesPagePreview = ({ entry }) => {
   const data = entry.getIn(["data"]).toJS();

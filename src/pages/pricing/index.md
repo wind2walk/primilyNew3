@@ -7,6 +7,7 @@ pricing:
     description: >-
       Create an no cost account and demo our Call Menus.
     featureList:
+      - list: Create an no cost account and demo our Call Menus. Then modify with your data do a live phone demo of what your callers will            get 
       - list: Call Greeting
       - list: Business Hours
       - list: Your web site link text to caller
@@ -17,6 +18,7 @@ pricing:
   priceBox2:
     description: All Quick Setup and Advanced features
     featureList:
+      - list: All Quick Setup and Advanced features.
       - list: Select any area.
       - list: Basic and Custom Call Menus
       - list: Call Reports

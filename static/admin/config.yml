@@ -174,28 +174,17 @@ collections:
                           { label: "Image", required: false, name: "image", widget: "image" }
                         ]
                     }
-                },
-                {
-                  label: "Playstore Images",
-                  name: "playstoreImages",
-                  widget: "list",
-                  fields:
-                    [
-                      { label: "Image", required: false, name: "image", widget: "image" },
-                      { label: "Image Text", required: false, name: "alt", widget: "string" },
-                      { label: "Url", required: false, name: "url", widget: "string" },
-                    ]
                 }
               ]
           }
-      - file: "src/pages/playstoreImages/index.md"
+      - file: "src/pages/playstoreimages/index.md"
         label: "Play store Images"
-        name: "playstoreImages"
+        name: "playstoreimages"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "playstoreImages-page" }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "playstoreimages-page" }
           - {
               label: "Playstore Images",
-              name: "playstoreImages",
+              name: "playstoreimages",
               widget: "list",
               fields:
                 [

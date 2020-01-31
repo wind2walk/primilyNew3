@@ -1,6 +1,6 @@
 ---
-templateKey: playstoreImages-page
-playstoreImages:
+templateKey: playstoreimages-page
+playstoreimages:
   - alt: apple
     image: /img/d1.png
     url: 'https://www.apple.com/in/'
