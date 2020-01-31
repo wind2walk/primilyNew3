@@ -204,7 +204,6 @@ collections:
                   { label: "Url", required: false, name: "url", widget: "string" },
                 ]
             }
-          }
       - file: "src/pages/imagedescription/index.md"
         label: "Image Description"
         name: "imagedescription"

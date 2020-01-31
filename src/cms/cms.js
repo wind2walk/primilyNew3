@@ -17,6 +17,7 @@ import DescriptionPagePreview from "./preview-templates/DescriptionPagePreview";
 import ScreensPagePreview from "./preview-templates/ScreensPagePreview";
 import AppgalleryPagePreview from "./preview-templates/AppgalleryPagePreview";
 import ImageDescriptionPagePreview from "./preview-templates/ImageDescriptionPagePreview";
+import PlaystoreImagesPagePreview from "./preview-templates/PlayStoreImages";
 
 CMS.registerPreviewTemplate("home", HomePagePreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);
@@ -34,3 +35,4 @@ CMS.registerPreviewTemplate("video", VideoPagePreview);
 CMS.registerPreviewTemplate("description", DescriptionPagePreview);
 CMS.registerPreviewTemplate("screens", ScreensPagePreview);
 CMS.registerPreviewTemplate("imagedescription", ImageDescriptionPagePreview);
+CMS.registerPreviewTemplate("playstoreImages", PlaystoreImagesPagePreview);

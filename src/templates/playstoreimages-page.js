@@ -13,9 +13,9 @@ import Container from '@material-ui/core/Container';
 */
 export class PlaystoreImages extends React.Component {
 
-    constructor(props) {
-        super(props);
-      }
+    // constructor(props) {
+    //     super(props);
+    //   }
 
     render() {
 
@@ -27,9 +27,9 @@ export class PlaystoreImages extends React.Component {
             hover:'blue'
         }
 
-        const {playstoreImages: playstoreImages} = this.props.data
-        console.log( '**PlaystoreImages**')
-        console.log( 'playstoreImages=> '+ JSON.stringify(playstoreImages) )
+        const { playstoreImages } = this.props.data
+        // console.log(this.props.data)
+        // const { image } = this.state;
         return (
 
             <div className="description">
