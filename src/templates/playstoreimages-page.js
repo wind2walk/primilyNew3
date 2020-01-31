@@ -13,9 +13,9 @@ import Container from '@material-ui/core/Container';
 */
 export class PlaystoreImages extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
-    //   }
+    constructor(props) {
+        super(props);
+      }
 
     render() {
 
@@ -27,8 +27,7 @@ export class PlaystoreImages extends React.Component {
             hover:'blue'
         }
 
-        const { playstoreImages } = this.props.data
-        // console.log(this.props.data)
+        const {playstoreimages} = this.props.data
         // const { image } = this.state;
         return (
 
@@ -36,11 +35,11 @@ export class PlaystoreImages extends React.Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col s12 center-align">
-                            {playstoreImages.map((image, index) => (
-                                <a style={{paddingLeft: '7px'}} href={image.url} key={index}>
-                                    <img src={image.image} alt={image.alt} className="responsive-img hoverable" alt=""/>
-                                </a>
-                            ))}
+                          {playstoreimages.map((image, index) => (
+                            <a style={{paddingLeft: '7px'}} href={image.url} key={index}>
+                                <img src={image.image} alt={image.alt} className="responsive-img" alt=""/>
+                            </a>
+                          ))} 
                         </div>
                     </div>
                 </div>
@@ -58,12 +57,12 @@ export default () => (
         query={graphql`
           query playstoreImagesQuery {
             allMarkdownRemark(
-              filter: { frontmatter: { templateKey: { eq: "playstoreImages-page" } } }
+              filter: { frontmatter: { templateKey: { eq: "playstoreimages-page" } } }
             ) {
               edges {
                 node {
                   frontmatter {
-                    playstoreImages {
+                    playstoreimages {
                       image
                       url
                       alt

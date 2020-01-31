@@ -6,7 +6,7 @@ import { graphql, StaticQuery } from 'gatsby'
 
 //import CarouselComponent from '../components/carousel'
 import SlideView from "../components/SlideView";
-import PlaystoreImages from './playstoreImages-page';
+import PlaystoreImages from './playstoreimages-page';
 
 export class Home extends React.Component {
     render() {
