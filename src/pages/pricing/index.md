@@ -5,8 +5,7 @@ pricing:
   description2: All features at one low price.
   priceBox1:
     description: >-
-      Create an no cost account and demo our Call Menus. Then modify with your
-      data do a live phone demo of what your callers will get.
+      Create an no cost account and demo our Call Menus.
     featureList:
       - list: Call Greeting
       - list: Business Hours
