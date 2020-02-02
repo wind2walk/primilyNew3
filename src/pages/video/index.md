@@ -1,6 +1,6 @@
 ---
 templateKey: video-page
-describe:
 video:
-  src: 'https://www.youtube.com/embed/mzW3382PST8'
+  src: img/Primily-1.mp4
 ---
+
