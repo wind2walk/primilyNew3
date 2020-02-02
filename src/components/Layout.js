@@ -6,6 +6,7 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import "../styles/features.css";
 import "materialize-css/sass/materialize.scss";
+import emailjs from 'emailjs-com';
 
 const TemplateWrapper = ({ footerData = null, navbarData = null, children }) => (
 
@@ -19,7 +20,12 @@ const TemplateWrapper = ({ footerData = null, navbarData = null, children }) => 
       {/* for Slick Carousel */}
         <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        {/* <script type="text/javascript">
+          (function(){
+              emailjs.init("user_VBzdOoMF3qU1tyFiWHHqA")
+          })();
+        </script> */}
     </Helmet>
     <Navbar data={navbarData} />
     <main>{children}</main>

@@ -375,6 +375,7 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Contact Description", name: "contactDescription", widget: "text" }
+          - { label: "Message Sent Image", name: "messagesentimage", widget: "image" }
           - {
               label: "Contact Gallery",
               name: "contactGallery",
