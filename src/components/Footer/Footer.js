@@ -9,7 +9,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 
 export const FooterTemplate = ({ data }) => {
-  console.log( 'footer data: '+ JSON.stringify(data) )
+  // console.log( 'footer data: '+ JSON.stringify(data) )
   const { logoImage, socialLinks, Headding, tagline, menuItems } = data;
   const classes = useStyles();
 
@@ -52,8 +52,8 @@ export const FooterTemplate = ({ data }) => {
             <div className="col l6 s12">
               <div className="row">
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
-                  {menuItems.map((menuItem) => (
-                      <div className="col s3">
+                  {menuItems.map((menuItem, index) => (
+                      <div className="col s3" key={index}>
                         <li key={menuItem.linkURL}>
                           <a href={menuItem.linkURL} className="white-text">
                             {menuItem.label}
@@ -95,8 +95,8 @@ const Footer = (props) => {
     return null;
   }
   const data = props.data.edges[0].node.frontmatter;
-  console.log( '**FooterTemplate**')
-  console.log( 'data=> '+ JSON.stringify(data) )
+  // console.log( '**FooterTemplate**')
+  // console.log( 'data=> '+ JSON.stringify(data) )
   return <FooterTemplate data={data} />;
 };
 
