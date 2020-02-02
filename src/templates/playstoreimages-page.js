@@ -27,8 +27,9 @@ export class PlaystoreImages extends React.Component {
             hover:'blue'
         }
 
-        const {playstoreimages} = this.props.data
-        // const { image } = this.state;
+        const {playstoreimages: playstoreimages} = this.props.data
+        console.log( '**Playstoreimages**')
+        console.log( 'playstoreimages=> '+ JSON.stringify(playstoreimages) )
         return (
 
             <div className="description">
@@ -37,9 +38,9 @@ export class PlaystoreImages extends React.Component {
                         <div className="col s12 center-align">
                           {playstoreimages.map((image, index) => (
                             <a style={{paddingLeft: '7px'}} href={image.url} key={index}>
-                                <img src={image.image} alt={image.alt} className="responsive-img" alt=""/>
+                                <img src={image.image} alt={image.alt} className="responsive-img hoverable" alt=""  />
                             </a>
-                          ))} 
+                          ))}
                         </div>
                     </div>
                 </div>
