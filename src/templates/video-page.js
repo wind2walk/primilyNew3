@@ -21,7 +21,7 @@ export class Video extends React.Component {
                 <div className="col s1"></div>
                 <div className="col s10">
                   <div className="video-container">
-                    <iframe width="853" height="480" src='/img/{video.src} frameBorder="0" allowFullScreen></iframe>
+                    <iframe width="853" height="480" src={video.src} frameBorder="0" allowFullScreen></iframe>
                   </div>
                 </div>
                 <div className="col s1"></div>
