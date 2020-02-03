@@ -108,7 +108,7 @@ export class ContactPageTemplate extends React.Component {
                     <div className="row">
                     <div className="col s1"></div>
                       <div className="col s10">
-                        <textarea id="message" value={this.state.message} placeholder="Message" name="message" onChange={this.handleChange} className="materialize-textarea"></textarea>
+                        <textarea id="message" style={{minHeight: '200px'}} value={this.state.message} placeholder="Message" name="message" onChange={this.handleChange} className="materialize-textarea"></textarea>
                    
                       </div>
                       <div className="col s1"></div>
@@ -122,10 +122,11 @@ export class ContactPageTemplate extends React.Component {
                 </div>
               </div> :
               <div className="row">
-                <div className="col s12 m12 s12 align-center">
+                <div className="col s3 align-center"></div>
+                <div className="col s6 align-center">
                   <img className="responsive-img" src={messagesentimage} alt='message sent' />
-                  
                 </div>
+                <div className="col s3 align-center"></div>
               </div>
               }
             </div>
